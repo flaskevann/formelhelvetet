@@ -20,19 +20,12 @@ Eksempel: "f101 beløp=100 rente=0.05 vekst=0.03 perioder=5".
 Forkortelsen "f101" betyr simpelthen at man velger funksjon nr. 101 i oversikten. Man slipper å skrive formelnavnet.
 
 ## Bruk
+Man kan velge å først vise en oversikt også skrive inn kommando:
 'python økonomiformler.py' for full formeloversikt
-
 'python økonomiformler.py søk="rente"' for å kun liste opp det som er av interesse, f.eks. rente.
 
-Etter oversikten venter programmet på kommando fra brukeren.
-
-eller
-
-'python økonomiformler.py <kommando>'
-
-Sistnevnte kan f.eks. se slik ut: 'python økonomiformler.py f101 beløp=100 rente=0.05 vekst=0.03 perioder=5'
-
-Her mottas kommandoen direkte fra terminal.
+Eller skrive inn direkte fra terminal:
+'python økonomiformler.py f101 beløp=100 rente=0.05 vekst=0.03 perioder=5'
 
 ## Lisens
 Prosjektet har MIT-lisens - se [LICENSE.md](LICENSE.md) for detaljer.
