@@ -6,8 +6,6 @@ https://www.bakkenblogg.no/diverse/formelhelvetet/
 
 Skjermbilde: https://i.imgur.com/pC2lKqV.jpg
 
-Fremtidig planlagt funksjonalitet: Genererte funksjoner med navnede parametre for hver innlastet formel.
-
 ## Kom i gang
 1. Installer Python 3 fra https://www.python.org/downloads/
 2. Last ned prosjektet til et sted på harddisken.
@@ -29,6 +27,9 @@ Man kan velge å først vise en oversikt også skrive inn kommando:
 Eller skrive inn direkte fra terminal:
 
 'python økonomiformler.py f101 beløp=100 rente=0.05 vekst=0.03 perioder=5'
+
+## Kommende funksjonalitet
+Fremtidig planlagt funksjonalitet: Genererte funksjoner med navnede parametre for hver innlastet formel.
 
 ## Lisens
 Prosjektet har MIT-lisens - se [LICENSE](LICENSE) for detaljer.
