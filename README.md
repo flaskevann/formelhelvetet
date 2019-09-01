@@ -11,10 +11,11 @@ Fremtidig planlagt funksjonalitet: Genererte funksjoner med navnede parametre fo
 2. Last ned prosjektet til et sted på harddisken.
 3. Åpne en terminal og gå til stedet prosjektet ble lastet ned.
 
-Hver formel har kommandoeksempel som du bør studere for riktig bruk,
-f.eks. "f101 beløp=100 rente=0.05 vekst=0.03 perioder=5".
+Hver formel har kommandoeksempel som du bør studere for riktig bruk.
 
-Forkortelsen "f101" betyr simpelthen funksjon nr. 101 i oversikten. Altså slipper man å skrive hele formelnavnet.
+Eksempel: "f101 beløp=100 rente=0.05 vekst=0.03 perioder=5".
+
+Forkortelsen "f101" betyr simpelthen at man velger funksjon nr. 101 i oversikten. Man slipper å skrive formelnavnet.
 
 ## Bruk
 Skriv
