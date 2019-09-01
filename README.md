@@ -13,7 +13,7 @@ Fremtidig planlagt funksjonalitet: Genererte funksjoner med navnede parametre fo
 2. Last ned prosjektet til et sted på harddisken.
 3. Åpne en terminal og gå til stedet prosjektet ble lastet ned.
 
-Hver formel har kommandoeksempel som du bør studere for riktig bruk.
+Hver formel har kommandoeksempel som må studeres for riktig bruk.
 
 Eksempel: "f101 beløp=100 rente=0.05 vekst=0.03 perioder=5".
 
