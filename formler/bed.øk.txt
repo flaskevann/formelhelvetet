@@ -1,0 +1,146 @@
+navn: fremtidsverdi
+forklaring: verdien i fremtiden av et beløp i dag.
+formel: nåverdi * (1 + rente) ^ perioder
+eksempel: 100 * (1 + 0.1) ^ 2 = 121
+---
+navn: nåverdi
+forklaring: nåverdien av et beløp i fremtiden.
+formel: fremtidsverdi / (1 + rente) ^ perioder
+eksempel: 121 / (1 + 0.1) ^ 2 = 100
+
+---
+navn: realrente
+forklaring: rente for den reelle avkastningen.
+formel: (1 + nominell_rente) / (1 + inflasjon) - 1
+eksempel: (1 + 0.1) / (1 + 0.01) - 1 = 0.0891
+tips: kan grovt tilnærmes med nominell rente - inflasjon.
+---
+navn: nominell rente
+forklaring: realrente og et tillegg for inflasjon.
+formel: (1 + realrente) * (1 + inflasjon) - 1
+eksempel: (1 + 0.09) * (1 + 0.01) - 1 = 0.1009
+tips: kan grovt tilnærmes med realrente + inflasjon.
+---
+navn: inflasjon
+forklaring: når pengene mister noe av sin kjøpekraft.
+formel: (1 + nominell_rente) / (1 + realrente) - 1
+eksempel: (1 + 0.1) / (1 + 0.09) - 1 = 0.0092
+tips: kan grovt tilnærmes med nominell rente - realrente.
+
+---
+navn: fremtidsverdi for annuitet med vekst
+forklaring: fremtidsverdi for en annuitet hvor beløpet gradvis endres.
+formel: beløp * ((1 + rente) ^ perioder - (1 + endring) ^ perioder) / (rente - endring)
+eksempel: 12000 * ((1 + 0.03) ^ 10 - (1 + 0.02) ^ 10) / (0.03 - 0.02) = 149 906.3512
+---
+navn: nåverdi for annuitet med vekst
+forklaring: nåverdi for en annuitet hvor beløpet gradvis øker.
+formel: beløp * ((1 + rente) ^ perioder - (1 + endring) ^ 10) / ((1 + rente) ^ perioder * (rente - endring))
+eksempel: 12000 * ((1 + 0.03) ^ 10 - (1 + 0.02) ^ 10) / ((1 + 0.03) ^ 10 * (0.03 - 0.02)) = 111 544.4037
+---
+navn: nåverdi for evig annuitet
+forklaring: nåverdi for en annuitet over lengre tid, f.eks. 15 år.
+formel: beløp / rente
+eksempel: 12 000 / 0.03 = 400 000
+---
+navn: nåverdi for evig annuitet med vekst
+forklaring: nåverdi for en annuitet over lengre tid, f.eks. 15 år, med vekst.
+formel: beløp / (rente - endring)
+eksempel: 12 000 / (0.03 - 0.02) = 1 200 000
+
+---
+navn: nåverdimetoden
+forklaring: metode for å beregne lønnsomhet når avkastningskrav og kontantstrømmer er gitt.
+formel: kontantstrøm_startåret + kontantstrøm_første_året / (1 + krav) ^ 1 + kontantstrøm_andre_året / (1 + krav) ^ 2
+eksempel: -1500 + 1100 / (1 + 0.1) ^ 1 + 1210 / (1 + 0.1) ^ 2 = 500
+tips: formelen tilpasses antall år.
+
+---
+navn: nåverdiindeks
+forklaring: indeks for å lønnsomhetsrangere prosjekter når man har for lite kapital til alle.
+formel: nåverdi / investeringsbeløp
+eksempel: 50 000 / 500 000 = 0.1
+
+---
+navn: lineæravskrivning
+forklaring: avskrivning med fast beløp.
+formel: (anskaffelseskost - utrangeringsverdi) / brukstid_i_år
+eksempel: (100 000 - 10 000) / 10 = 9 000
+---
+navn: produksjonsenhetsmetoden
+forklaring: avskrivning med et beløp utifra hvor mye anleggsmiddelet er brukt.
+formel: brukstid * (anskaffelseskost - utrangeringsverdi) / totalbruk
+eksempel: 1 000 * (100 000 - 10 000) / 20 000 = 4 500
+
+---
+navn: avanse
+forklaring: påslag på varekostnad for å finne en passende pris.
+formel: varekost * avanse
+eksempel: 100 000 * 1.5 = 150 000
+---
+navn: tilvirkningskost
+forklaring: det man selv bruker på å lage en vare ved selvkostmetoden.
+formel: direkte_materialer + direkte_lønn + indirekte_kostnader_i_tilvirkningen
+eksempel: 100 000 + 200 000 + 50 000 = 350 000
+---
+navn: selvkost
+forklaring: det man selv bruker på å lage og selge en vare ved selvkostmetoden.
+formel: tilvirkningskost + indirekte_kostnader_i_salg_og_administrasjon
+eksempel: 350 000 + 50 000 = 400 000
+---
+navn: fortjeneste (1)
+forklaring: det som blir igjen av salgsinntekten etter selvkost er trukket fra.
+formel: salgsinntekt - selvkost
+eksempel: 500 000 - 400 000 = 100 000
+
+---
+navn: tilvirkningsmerkost
+forklaring: det man selv bruker på å lage en vare ved bidragsmetoden.
+formel: direkte_materialer + direkte_lønn + indirekte_variable_kostnader_i_tilvirkningen
+eksempel: 100 000 + 160 000 + 40 000 = 300 000
+---
+navn: salgsmerkost
+forklaring: det man selv bruker på å lage og selge en vare ved bidragsmetoden.
+formel: tilvirkningsmerkost + indirekte_variable_kostnader_i_salg_og_administrasjon
+eksempel: 300 000 + 50 000 = 350 000
+---
+navn: dekningsbidrag
+forklaring: det som skal dekke faste kostnader ved bidragsmetoden.
+formel: salgsinntekter - salgsmerkost
+eksempel: 500 000 - 350 000 = 150 000
+---
+navn: dekningsgrad
+forklaring: andelen av salgsinntekten som utgjør dekningsbidraget.
+formel: dekningsbidrag / salgsinntekt
+eksempel: 150 000 / 500 000 = 0.30
+---
+navn: fortjeneste (2)
+forklaring: det som blir igjen av dekningsbidraget etter faste kostnader er trukket fra.
+formel: dekningsbidrag - faste_kostnader
+eksempel: 150 000 - 100 000 = 50 000
+---
+navn: nullpunktomsetning (1)
+forklaring: den omsetningen som gjør at man går i null.
+formel: faste_kostnader / dekningsgrad
+eksempel: 150 000 / 0.3 = 500 000
+---
+navn: nullpunktomsetning (2)
+forklaring: den omsetningen som gjør at man går i null.
+formel: salgsmerkost + faste_kostnader
+eksempel: 350 000 + 150 000 = 500 000
+---
+navn: målsatt salgsinntekt
+forklaring: om man ønsker en bestemt fortjeneste tar man utgangspunkt i faste kostnader og dekningsbidrag for å finne nødvendig salgsinntekt.
+formel: (faste_kostnader + ønsket_fortjeneste) / dekningsgrad
+eksempel: (150 000 + 75 500) / 0.3 = 750 000
+---
+navn: sikkerhetsmargin
+forklaring: den delen av salgsinntekten man kan miste før man går i underskudd.
+formel: salgsinntekt - nullpunktomsetning
+eksempel: 500 000 - 450 000 = 50 000
+tips: dette blir samme størrelse som det man har i fortjeneste.
+---
+navn: sikkerhetsgrad
+forklaring: andelen av salgsinntekten som utgjør sikkerhetsmarginen.
+formel: sikkerhetsmargin / salgsinntekt
+eksempel: 137 500 / 2 750 000 = 0.05

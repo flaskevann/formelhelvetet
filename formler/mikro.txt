@@ -1,0 +1,20 @@
+navn: priselastisitet
+forklaring: sammenhengen mellom endring i mengde og endring i pris, når sistnevnte er justert.
+formel: prosentendring_for_mengde / prosentendring_for_pris
+eksempel: 10 / 20 = 0.5
+---
+
+navn: regnskapsmessig profitt
+forklaring: det som blir igjen av inntektene etter eksplisitte kostnader.
+formel: totale_inntekter - eksplisitte_kostnader
+eksempel: 1 000 000 - 450 000 = 550 000
+---
+navn: økonomisk profitt (1)
+forklaring: det som blir igjen av inntektene etter både eksplisitte og implisitte kostnader.
+formel: totale_inntekter - alle_eksplisitte_og_implisitte_kostnader
+eksempel: 1 000 000 - 650 000 = 350 000
+---
+navn: økonomisk profitt (2)
+forklaring: det som blir igjen av den regnskapsmessige profitten etter implisitte kostnader.
+formel: regnskapsmessig_profitt - implisitte_kostnader
+eksempel: 550 000 - 200 000 = 350 000

@@ -1,0 +1,55 @@
+navn: bruttonasjonalprodukt
+forklaring: verdien av alt som produseres i et land i løpet av ett år.
+formel: forbruk + investering + offentlige_kjøp + nettoeksport
+eksempel: 100 000 000 000 + 300 000 000 000 + 50 000 000 000 + 25 000 000 000 = 475 000 000 000
+---
+navn: grønt bruttonasjonalprodukt
+forklaring: bruttonasjonalprodukt med verdien av miljøgoder i tillegg.
+formel: bruttonasjonalprodukt + verdien_av_miljøgoder
+eksempel: 370 600 000 000 + 1 000 000 000 = 371 600 000 000
+tips: verdien av miljøgoder er vanskelig å fastsette, over er det bare valgt et litt tilfeldig tall.
+---
+navn: bruttonasjonalprodukt per innbygger
+forklaring: bruttonasjonalprodukt fordelt på antall innbyggere brukes ofte som et velferdsmål.
+formel: (bruttonasjonalprodukt / antall_arbeidstakere) * (antall_arbeidstakere / antall_i_populasjonen)
+eksempel: (370 600 000 000 / 2 658 000) * (2 658 000 / 5 400 000) = 68 629.6296
+---
+navn: nettonasjonalprodukt (1)
+forklaring: bruttonasjonalprodukt med fratrekk for verdiforringelse av bygninger, maskiner, o.s.v.
+formel: bruttonasjonalprodukt - kapitalslit
+eksempel: 475 000 000 000 - 100 000 000 000 = 375 000 000 000
+---
+navn: nettonasjonalprodukt (2)
+forklaring: bruttonasjonalprodukt med fratrekk for verdiforringelse av bygninger, maskiner, o.s.v.
+formel: forbruk + (investering - kapitalslit) + offentlige_kjøp + nettoeksport
+eksempel: 100 000 000 000 + (300 000 000 000 - 100 000 000 000) + 50 000 000 000 + 25 000 000 000 = 375 000 000 000
+---
+
+navn: arbeidsledighetsgrad
+forklaring: andelen av arbeidsstokken som er arbeidsledige.
+formel: antall_arbeidsledige / antall_i_arbeidsstokken
+eksempel: 100 000 / 1 500 000 = 0.0667
+---
+navn: naturlig arbeidsledighet
+forklaring: alle som er midlertidig arbeidsløse samt de som ikke har kunnskapen og/eller erfaringen som trengs.
+formel: friksjonell_arbeidsledighet + strukturell_arbeidsledighet
+eksempel: 25 000 + 75 000 = 100 000
+---
+navn: faktisk arbeidsledighet
+forklaring: alle naturlig arbeidsledige samt de som er arbeidsledige p.g.a. at det er feil sesong.
+formel: naturlig_arbeidsledighet + sesongavhengig_arbeidsledighet
+eksempel: 100 000 + 50 000 = 150 000
+
+---
+navn: pengemengden
+forklaring: pengemengden bestemmes av mengden kontanter ute hos publikum og hvor mye dette utgjør av hva de har på konto, i tillegg kommer det bankene har spart av innskudd.
+formel: (andel_kontanter_av_innskudd + 1) / (andel_kontanter_av_innskudd + andel_reserve_av_innskudd) * den_monetære_basen
+eksempel: (0.1 + 1) / (0.1 + 0.2) * 100 000 000 = 366 666 666.6667
+tips: første hele leddet i formelen over kalles pengemultiplikatoren.
+
+---
+navn: cobb-douglas' formel
+forklaring: en produksjonsformel hvor størrelsen på kapital, arbeidskraft, samt produsert mengde henger sammen.
+formel: produktivitetsfaktor * mengde_kapital ^ størrelsesforhold * mengde_arbeidskraft ^ (1 - størrelsesforhold)
+eksempel: 0.7 * 1000 ^ 0.4 * 3000 ^ (1 - 0.4) = 1353.2274
+tips: størrelsesforholdet er alltid mellom 0 til 1.
