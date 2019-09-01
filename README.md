@@ -31,4 +31,4 @@ Eller skrive inn direkte fra terminal:
 'python økonomiformler.py f101 beløp=100 rente=0.05 vekst=0.03 perioder=5'
 
 ## Lisens
-Prosjektet har MIT-lisens - se [LICENSE.md](LICENSE.md) for detaljer.
+Prosjektet har MIT-lisens - se [LICENSE](LICENSE) for detaljer.
