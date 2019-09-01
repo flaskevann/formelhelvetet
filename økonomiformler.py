@@ -84,7 +84,7 @@ class Økonomiformler:
                 else:
                     print("Formel '"+formelnavn+"' allerede lagt til!")
 
-        # Finn variabler og lag funksjoner
+        # Finn variabler
         self.__finnVariabler()
 
     def __finnVariabler(self):
