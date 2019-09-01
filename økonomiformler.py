@@ -212,3 +212,5 @@ else:
     kommandoDeler.pop(0) # fjerner filnavnet som er første argument
     kommando = " ".join(kommandoDeler)
     print(øf.kjørKommando(kommando, False))
+
+    
