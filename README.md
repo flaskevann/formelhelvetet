@@ -2,6 +2,7 @@
 Kartlagte viktige formler i økonomi tilgjengelig via terminal som valgbare funksjoner med egne inndata.
 
 Opprinnelig et prosjekt i JavaScript for å generere lett tilgjengelige kalkulatorer på nettside:
+
 https://www.bakkenblogg.no/diverse/formelhelvetet/
 
 Skjermbilde: https://i.imgur.com/pC2lKqV.jpg
