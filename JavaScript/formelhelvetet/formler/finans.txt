@@ -1,0 +1,80 @@
+navn: durasjon
+forklaring: vektet gjennomsnittstid til forfall.
+formel: (periode_1 * kupong) / (1 + kupongrente) ^ periode_1 / ansiktsverdi + (periode_2 * (kupong + ansiktsverdi)) / (1 + kupongrente) ^ periode_2 / ansiktsverdi
+eksempel: (1 * 5) / (1 + 0.05)^1 / 100 + (2 * (5 + 100)) / (1 + 0.05)^2 / 100 = 1.9524
+tips: formelen tilpasses antall perioder.
+---
+navn: modifisert durasjon
+forklaring: verdipapirets %-endring i verdi når rentenivået endres med 1%.
+formel: durasjon / (1 + kupongrente)
+eksempel: 1.9524 / (1 + 0.05) = 1.8594
+tips: når rentenivået går ned er endringen positiv, og vica versa.
+
+---
+navn: utbytte (1)
+forklaring: utbytte per aksje er det eier gis av selskapets all inntjente fortjeneste per aksje.
+formel: utbytteforhold * fortjeneste_per_aksje
+eksempel: 0.6 * 20 = 12
+tips: utbytteforhold er en andel og dermed mellom 0 og 1.
+---
+navn: reinvesteringsforhold
+forklaring: andelen av fortjenesten per aksje som vil bli reinvestert.
+formel: 1 - utbytteforhold
+eksempel: 1 - 0.6 = 0.4
+---
+navn: vekst
+forklaring: vekst i fortjeneste.
+formel: egenkapitalrentabilitet * reinvesteringsforhold
+eksempel: 0.06 * 0.4 = 0.0240
+---
+navn: avkastning (1)
+forklaring: avkastning med utgangspunkt i risiko og renter.
+formel: risikofri_rente + beta * (markedsavkastning - risikofri_rente)
+eksempel: 0.05 + 1.1 * (0.1 - 0.05) = 0.1050
+---
+navn: avkastning (2)
+forklaring: avkastning med utgangspunkt i vekst.
+formel: (vekst * kjøpskurs + utbytte) / kjøpskurs
+eksempel: (0.024 * 200 + 12) / 200 = 0.0840
+---
+navn: avkastning (3)
+forklaring: avkastning med utgangspunkt i vekst.
+formel: (salgskurs - kjøpskurs + utbytte) / kjøpskurs
+eksempel: (300 - 200 + 12) / 200 = 0.5600
+---
+navn: veid kapitalkostnad
+forklaring: kapitalkostnad justert for lånerente.
+formel: egenkapitalandel * avkastning + gjeldsandel * lånerente
+eksempel: 0.6 * 0.105 + 0.4 * 0.08 = 0.0950
+
+---
+navn: aksjekurs
+forklaring: kapitalkostnad justert for lånerente.
+formel: utbytte / (avkastning - vekst)
+eksempel: 12 / (0.105 - 0.024) = 148.1481
+---
+navn: nåverdi av aksje
+forklaring: aksjeverdi idag utifra pris, fortjeneste og avkastning.
+formel: pris - fortjeneste_per_aksje / avkastning
+eksempel: 200 - (20 / 0.105) = 9.5238
+tips: hvis 0 ingen verdiskapning.
+
+---
+navn: porteføljeavkastning
+forklaring: porteføljeavkastning som tar hensyn til lånerente når det er investert lånte penger.
+formel: aksjevekt_1 * aksjeavkastning_1 + aksjevekt_2 * aksjeavkastning_2 - lånevekt * lånerente
+eksempel: 0.5 * 0.10 + 0.5 * 0.12 - 1 * 0.05 = 0.0600
+tips: formelen tilpasses antall perioder mens lånevekt settes til 0 når man ikke har lånt (i eksemplet er den 1 for 100%).
+---
+navn: porteføljevarians
+forklaring: varians for aksjeportefølje.
+formel: antall_aksjer * korrelasjon * aksjevekt_1 * standardavvik_1 * aksjevekt_2 * standardavvik_2 + aksjevekt_1 ^ 2 * standardavvik_1 ^ 2 + aksjevekt_2 ^ 2 * standardavvik_2 ^ 2
+eksempel: 2 * -1 * 0.5 * 0.2 * 0.5 * 0.15 + 0.5 ^ 2 * 0.2 ^ 2 + 0.5 ^ 2 * 0.15 ^ 2
+tips: formelen tilpasses antall perioder og korrelasjon er mellom -1 og 1.
+
+---
+navn: nåverdi av vekstannuitet for periode
+forklaring: nåverdi av like beløp som  vokser over en periode.
+formel: (beløp / (rente - vekst)) * (1 - ((1 + vekst) / (1 + rente)) ^ perioder)
+eksempel: (100 / (0.05 - 0.03)) * (1 - ((1 + vekst) / (1 + rente)) ^ 5) = 458.3921
+tips: vekst settes til 0 og perioder til et stort tall når disse delene ikke er relevante.

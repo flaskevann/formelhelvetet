@@ -1,0 +1,200 @@
+navn: bruttofortjeneste
+forklaring: det man har igjen etter å ha trukket fra varekostnad.
+formel: salgspris - varekostnad
+eksempel: 100 000 - 75 000 = 25 000
+---
+navn: saldoavskrivning
+forklaring: prosentvis avskrivning.
+formel: bokført_verdi * saldosats
+eksempel: 100 000 * 0.25 = 25 000
+
+---
+navn: gjennomsnittlig beholdning av kundefordringer
+forklaring: gjennomsnittlig verdi for hele beholdningen av kundefordringer i en gitt periode.
+formel: (inngående_kundefordringer + utgående_kundefordringer) / 2
+eksempel: (500 000 + 400 000) / 2 = 450 000
+---
+navn: omløpshastighet for kundefordringer
+forklaring: antall ganger den gjennomsnittlige beholdningen av kundefordringer blir omsatt.
+formel: salgsinntekter_inkludert_MVA / gjennomsnittlig_beholdning_for_kundefordringer
+eksempel: 10 000 000 / 450 000 = 22.2222
+---
+navn: gjennomsnittlig kredittid for kunder
+forklaring: gjennomsnittlig kredittid for kunder via kundefordringer.
+formel: (gjennomsnittlig_beholdning_for_kundefordringer * dager_i_året) / kredittsalg_inkludert_MVA
+eksempel: (450 000 * 365) / 10 000 000 = 16.425
+
+---
+navn: gjennomsnittlig leverandørgjeld
+forklaring: gjennomsnittlig gjeld til leverandører innenfor en gitt periode.
+formel: (inngående_leverandørgjeld + utgående_leverandørgjeld) / 2
+eksempel: (150 000 + 250 000) / 2 = 200 000
+---
+navn: gjennomsnittlig leverandørgitt kredittid
+forklaring: gjennomsnittlig kredittid gitt av en leverandør til et selskap.
+formel: (gjennomsnittlig_leverandørgjeld * dager_i_året) / innkjøp_inkludert_MVA
+eksempel: (200 000 * 365) / 5 000 000 = 14.6
+
+---
+navn: vareforbruk
+forklaring: vareforbruk med inngående og utgående beholdning samt vareinnkjøp.
+formel: inngående_beholdning + varekjøp - utgående_beholdning
+eksempel: 100 000 + 50 000 - 75 000 = 75 000
+---
+navn: gjennomsnittlig varelager
+forklaring: gjennomsnittlig beholdning av varer innenfor en gitt periode.
+formel: (inngående_varebeholdning + utgående_varebeholdning) / 2
+eksempel: (800 000 + 300 000) / 2 = 550 000
+---
+navn: varelagerets omløpshastighet
+forklaring: hvor raskt varelageret blir byttet ut.
+formel: vareforbruk / gjennomsnittlig_varelager
+eksempel: 750 000 / 500 000 = 1.5
+---
+navn: gjennomsnittlig varelagringstid
+forklaring: gjennomsnittstiden en vare befinner seg på lageret.
+formel: dager_i_året / varelagerets_omløpshastighet
+eksempel: 365 / 1.5 = 243.3333
+
+---
+navn: kapitalens omløpshastighet
+forklaring: forholdet mellom inntektene og gjennomsnittlig totalkapital.
+formel: inntekter / gjennomsnittlig_totalkapital
+eksempel: 10 000 000 / 5 000 000 = 2
+
+---
+navn: egenkapitalandel
+forklaring: andelen av totalkapital som er egenkapital.
+formel: egenkapital / totalkapital
+eksempel: 500 000 / 1 000 000 = 0.5
+---
+navn: innskutt egenkapital
+forklaring: former for egenkapital som ikke har overskudd som opphav.
+formel: aksjekapital + overkurs
+eksempel: 1 000 000 + 2 000 000 = 3 000 000
+
+---
+navn: pris/bok
+forklaring: forholdet mellom et selskaps markedsverdi og dets bokførte verdier.
+formel: (aksjekurs * antall_aksjer) / bokført_egenkapital
+eksempel: (100 * 10000) / 500 000 = 2
+
+---
+navn: gjennomsnittlig egenkapital
+forklaring: gjennomsnittlig egenkapital for en gitt periode.
+formel: (inngående_egenkapital + utgående_egenkapital) / 2
+eksempel: (2 000 000 + 2 500 000) / 2 = 2 250 000
+---
+navn: gjennomsnittlig gjeld
+forklaring: gjennomsnittlig gjeld for en gitt periode.
+formel: (inngående_gjeld + utgående_gjeld) / 2
+eksempel: (700 000 + 1 300 000) / 2 = 1 000 000 
+---
+navn: gjennomsnittlig gjeldsrente
+forklaring: gjennomsnittlig gjeldsrente for all gjeld man har.
+formel: rentekostnad / gjennomsnittlig_gjeld
+eksempel: 50 000 / 1 000 000 = 0.05
+
+---
+navn: resultatgrad
+forklaring: resultatet som en andel av inntektene.
+formel: (ordinært_resultat_før_skatt + gjeldskostnader) / totale_inntekter
+eksempel: (300 000 + 30 000) / 1 000 000 = 0.33
+
+---
+navn: totalkapitalrentabilitet
+forklaring: avkastning på egenkapital og gjeld.
+formel: (ordinært_resultat_før_skattekostnad + gjeldskostnader) / gjennomsnittlig_totalkapital
+eksempel: (300 000 + 30 000) / 4 000 000 = 0.0825
+---
+navn: egenkapitalrentabilitet før skatt (1)
+forklaring: avkastning på egenkapital før skatt.
+formel: ordinært_resultat_før_skattekostnad / gjennomsnittlig_egenkapital
+eksempel: 300 000 / 3 000 000 = 0.1
+---
+navn: egenkapitalrentabilitet etter skatt
+forklaring: avkastning på egenkapital etter skatt.
+formel: ordinært_resultat_etter_skattekostnad / gjennomsnittlig_egenkapital
+eksempel: 225 000 / 3 000 000 = 0.075
+---
+navn: egenkapitalrentabilitet før skatt (2)
+forklaring: avkastning på egenkapital før skatt.
+formel: totalkapitalrentabilitet + (totalkapitalrentabilitet - gjennomsnittlig_gjeldsrente) * gjeld / egenkapital
+eksempel: 0.0825 + (0.0825 - 0.07) * 1 000 000 / 3 000 000 = 0.0867
+tips: denne formelen kalles for brekkstangformelen.
+
+---
+navn: arbeidskapital (1)
+forklaring: kapital for å finansiere varer og/eller tjenester i arbeid inntil de er solgt og vederlag mottatt.
+formel: omløpsmidler - kortsiktig gjeld
+eksempel: 500 000 - 250 000 = 250 000
+---
+navn: arbeidskapital (2)
+forklaring: kapital for å finansiere varer og/eller tjenester i arbeid inntil de er solgt og vederlag mottatt.
+formel: egenkapital + langsiktig_gjeld - anleggsmidler
+eksempel: 3 000 000 + 1 000 000 - 3 750 000 = 250 000
+---
+navn: arbeidskapitalgrad
+forklaring: arbeidskapital som andel av driftsinntekter.
+formel: arbeidskapital / driftsinntekter
+eksempel: 250 000 / 1 000 000 = 0.25
+
+---
+navn: likviditetsgrad 1
+forklaring: graden av likviditet når man ikke har varebeholdning.
+formel: omløpsmidler / driftsinntekter
+eksempel: 500 000 / 1 000 000 = 0.5
+---
+navn: likviditetsgrad 2
+forklaring: graden av likviditet når man tar med varebeholdning.
+formel: (omløpsmidler - varebeholdning) / driftsinntekter
+eksempel: (500 000 - 250 000) / 1 000 000 = 0.25
+
+---
+navn: selvfinansieringsevnen
+forklaring: evnen til å finansiere egen aktivitet uten å måtte ta opp lån.
+formel: resultat_før_skattekostnad - betalbar_skatt + avskrivninger + nedskrivninger
+eksempel: 1 000 000 - 250 000 + 100 000 + 50 000 = 900 000
+
+---
+navn: betalbar skatt
+forklaring: skatt som beregnes utifra overskuddet i skatteregnskapet.
+formel: skatteandel * skattemessig_overskudd
+eksempel: 0.25 * 100 000 = 37 500
+---
+navn: skattekostnad
+forklaring: skatt i årsregnskap er samlet i skattekostnaden og består av betalbar skatt pluss eller minus endring i utsatt skatt.
+formel: betalbar_skatt + endring_i_utsatt_skatt
+eksempel: 200 000 + -25 000 = 175 000
+
+---
+navn: garantikostnader
+forklaring: den hele garantikostnaden består av det som er realisert allerede pluss eller minus endringer.
+formel: realiserte_garantikostnader + endring_i_avsatte_garantikostnader
+eksempel: 100 000 + -25 000 = 75 000
+
+---
+navn: maks teoretisk utbytte
+forklaring: ved beregning av maks utbytte finner man netto eiendeler og gjør diverse tillegg samt fratrekk
+formel: (eiendeler - gjeld) + (årsresultat + avskrivninger) - (bundet_egenkapital + egne_aksjer + lån_til_ansatte + lån_til_aksjonærer_som_motregnes_senere)
+eksempel: (1 000 000 - 500 000) + (250 000 + 50 000) - (100 000 + 10 000 + 50 000 + 200 000) = 440 000
+---
+navn: utbytte (2)
+forklaring: vedtatt utbytte er avhengig av likvide midler og kravet om forsvarlig likviditet og soliditet
+formel: bank + kontanter + andre_likvide_midler + motregnet_aksjonærlån
+eksempel: 500 000 + 10 000 + 25 000 + 100 000 = 635 000
+---
+navn: midlertidig forskjell
+forklaring: når det brukes andre vurderingsregler skattemessig oppstår det midlertidig forskjell
+formel: regnskapsmessig_verdi - skattemessig_verdi
+eksempel: 100 000 - 75 000 = 25 000
+---
+navn: endring i midlertidig forskjell
+forklaring: når det finnes en midlertidig forskjell mellom årsregnskapet og skatteregnskapet kan denne vokse eller krympe
+formel: midlertidig_forskjell_UB - midlertidig_forskjell_IB
+eksempel: 125 000 - 110 000 = 15 000
+---
+navn: skattepliktig resultat
+forklaring: for å finne skattepliktig resultat tar man utgangspunkt i regnskapsmessig resultat og justerer for permanente og midlertidige forskjeller
+formel: regnskapsmessig_resultat - skattefrie_inntekter + ikke_fradragsberettigede_kostnader + endring_i_midlertidige_forskjeller
+eksempel: 1 000 000 - 100 000 + 50 000 + -25 000 = 925 000

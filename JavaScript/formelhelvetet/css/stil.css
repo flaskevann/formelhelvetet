@@ -1,0 +1,136 @@
+	* {
+		font-family: "Lucida Console", Monaco, monospace;
+	}
+
+	body {
+		padding: 25px;
+	}
+
+	header {
+		margin-bottom: 20px;
+	}
+
+	header, main, footer {
+		clear: left;
+	}
+
+	h1 {
+		font-size: 150%;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-size: 130%;
+
+		margin: 0px;
+		padding: 0px;
+		padding-top:5px;
+	}
+
+	h3 {
+		font-size: 90%;
+
+		margin: 0px;
+		padding: 0px;
+	}
+
+	main {
+		border: 1px solid gray;
+
+		padding: 5px;
+	}
+
+	main > p {
+		padding: 3px;
+		margin: 0px;
+
+		clear: both;
+	}
+
+	form, input, label {
+		margin: 0px;
+		padding: 0px;
+
+		font-size: 90%;
+	}
+
+	a {
+		color: green;
+	}
+
+	footer {
+		margin-top: 20px;
+	}
+
+	footer > p {
+		margin: 0px;
+		padding: 0px;
+		padding-top: 5px;
+	}
+
+	#kalkiser {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.kalkis {
+		border: 1px dashed black;
+		border-radius: 5px;
+
+		padding: 7px;
+		margin: 10px;
+	}
+
+	.kalkis:hover {
+		background-color: #e6ffe6;
+	}
+
+	#kalkisinfo {
+		float: left;
+	}
+
+	.kalkis > p {
+		margin: 0px;
+		padding: 0px;
+
+		font-size: 90%;
+	}
+
+	.reset-kalkis-knapp {
+		float: right;
+	}
+
+	.filnavn {
+		color: #ccc;
+		font-style: italic;
+		text-align: right;
+
+		margin-top: 20px;
+		margin-right: 12px;
+	}
+
+	#filinfo {
+		margin-top: 20px;
+	}
+
+	#tilToppenKnapp {
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+
+		background-color: lightgray;
+		padding: 7px;
+		padding-left:15px;
+		padding-right:15px;
+
+		border-radius: 6px;
+
+		opacity: 0.8;
+
+		font-size:140%;
+		font-weight:bold;
+
+		color: green;
+
+		cursor: default;
+	}

@@ -1,0 +1,55 @@
+navn: skattepliktig utbytte
+forklaring: skattegrunnlag for utbytte fra og med 2016.
+formel: (utbytte - skjermingsfradrag) * multiplikator
+eksempel: (100 - 20) * 1.33 = 106.4000
+tips: bruk multiplikator fra [https://lovdata.no/NL/lov/1999-03-26-14/§10-11, sktl. § 10-11, første ledd].
+
+---
+navn: gjennomsnittlig utleieinntekt
+forklaring: brukes for å finne beregnet utleieinntekt for næringseiendom.
+formel: utleieinntekt_fra_inntektsår_og_to_forrige_år / 3
+eksempel: 30 000 / 3 = 10 000.0000
+---
+navn: beregnet utleieverdi
+forklaring: brukes for å verdsette en næringseiendom.
+formel: (gjennomsnittlig_utleieinntekt * (1 - standardfradrag)) / kalkulasjonsrente
+eksempel: (10 000 * (1 - 0.1)) / 0.066 = 136 363.6364
+tips: kalkulasjonsrente bestemmer Skattedirektoratet mens standardfradrag er å finne i [https://lovdata.no/SF/forskrift/1999-11-19-1158/§4-10-4, FSFIN § 4-10-4, andre ledd].
+---
+navn: næringseiendomverdi
+forklaring: verdsett en næringseiendom utifra beregnet utleieverdi.
+formel: beregnet_utleieverdi * verdsettingssats
+eksempel: 136 363.6364 * 0.80 = 109 090.9091
+tips: bruk verdsettingssats fra [https://lovdata.no/NL/lov/1999-03-26-14/§4-10, sktl. § 4-10, fjerde ledd].
+
+---
+navn: gjeldsreduksjon
+forklaring: hvis eiendeler som er del av bruttoformuen nedvurderes må også gjelden reduseres.
+formel: eiendelens_verdi * (1 - verdsettingssats) * (gjeld / bruttoformue)
+eksempel: 100 000 * (1 - 0.9) * (1 000 000 / 3 000 000) = 3333.3333
+tips: bruk de verdsettingssatsene som er oppgitt i [https://lovdata.no/dokument/SF/forskrift/2017-11-14-1779, takseringsreglene].
+
+---
+navn: formuesstillegg
+forklaring: brukes ved skattebegrensning når man har lav alminnelig inntekt.
+formel: (nettoformue_uten_primærbolig - fribeløp) * skattesats
+eksempel: (500 000 - 200 000) * 0.015 = 4 500.0000
+tips: bruk skattesats og fribeløp som oppgitt i [https://lovdata.no/NL/lov/1999-03-26-14/§17-1, sktl. § 17-1, tredje ledd].
+---
+navn: skattebegrensningsgrunnlag
+forklaring: ved lav alminnelig inntekt er det et annet skattegrunnlag som gjelder.
+formel: alminnelig_inntekt + formuesstillegg - skattefri_nettoinntekt
+eksempel: 200 000 + 3 333.3333 - 147 450 = 55 883.3333
+tips: bruk de fastsatte beløpene for skattefri nettoinntekt i [https://lovdata.no/STV/forskrift/2016-12-17-1666/§6-4, st.ved. for skatt § 6-4].
+---
+navn: skatt ved skattebegrensning
+forklaring: med nytt skattegrunnlag må skatten beregnes på nytt.
+formel: skattebegrensningsgrunnlag * skattesats + formuesskatt
+eksempel: 55 883.3333 * 0.55 + 1 000 = 31 735.8333
+tips: bruk skattesats fra [https://lovdata.no/NL/lov/1999-03-26-14/§17-1, sktl. § 17-1, andre ledd].
+---
+navn: nedskriving av kundefordringer
+forklaring: om man opplever tap på kundefordringer må man nedskrive de skattemessig.
+formel: ((konstantert_tap_i_fjor + konstantert_tap_i_år) / (kredittsalg_i_fjor + kredittsalg_i_år)) * faktortall * pålydende_for_kundefordringer_i_år
+eksempel: ((250 000 + 280 000) / (25 000 000 + 28 000 000)) * 4 * 2 800 000 = 112 000
+tips: Se [https://lovdata.no/NL/lov/1999-03-26-14/§14-5, sktl. § 14-5, fjerde ledd] for detaljer og [https://lovdata.no/SF/forskrift/1999-11-19-1158/§14-5-10, FSFIN § 14-5-10] for riktig faktortall.
